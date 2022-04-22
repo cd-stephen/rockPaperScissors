@@ -9,7 +9,7 @@ const getUserChoice = userInput => {
     } else if (computerChoice === 1) {
         return "paper";
     } else if (computerChoice === 2) {
-        return "scissor";
+        return "scissors";
     } else {
           console.log('Error!, Computer can\'t seem to pick');
     }
@@ -28,11 +28,11 @@ const getUserChoice = userInput => {
         console.log('you win!')
 
     } else if 
-      (userChoice === 'paper' && computerChoice !== 'scissor') {
+      (userChoice === 'paper' && computerChoice !== 'scissors') {
         console.log('you win!')
 
     } else if 
-      (userChoice === 'scissor' && computerChoice !== 'rock') {
+      (userChoice === 'scissors' && computerChoice !== 'rock') {
         console.log('you win!')
 
     } else {
@@ -42,7 +42,7 @@ const getUserChoice = userInput => {
 
   }
 
- userChoice = getUserChoice('Paper')
+ userChoice = getUserChoice('scissors')
  console.log(`You picked ${userChoice}`)
  computerChoice = getComputerChoice()
  console.log(`Computer picked ${computerChoice}`)
